@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            /* essa pseudo-classe serve para quando o link já foi visitado*/
+            color: darkblue;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            /*essa pseudo-classeserve para quando o link for ativado */
+            color: gray;
+        }
+
+        /*os dois pontos duas vezes são as pseudo-elementos*/
+
+        a::after{
+            /*o pseudo-elemento after serve para acresentar algo depois de algo*/
+            content: ' [link]';
+            /*o content serve para escrever algo  */
+            text-decoration: none;
+            font-weight: normal;
+            color: lightgrey;
+        }
+
+        .especial::before{
+            content: '->';
+        }
+        .especial::after{
+            content: '<-';
+            color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a target="_blank" href="https://www.youtube.com/coisadenerd">coisa de nerd</a></li>
+        <li><a target="_blank" href="https://www.youtube.com/cadeachave" class="especial">cadê a chave</a></li>
+        <li><a target="_blank" href="https://www.youtube.com/felipeneto">felipe neto</a></li>
+    </ul>
+</body>
+</html>

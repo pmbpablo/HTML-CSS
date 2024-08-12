@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmica</h1>
+    <picture> <!--Essa teg serve para alternar automaticamente o tamanho da imagem com base no tamanho da tela em que ela esta sendo exibida-->
+    <!--o parametro source midia type serve para fazer a alteração do tamanho da imagem com base na quantiatade de px estipulada, é recomendavel comecar pela imagem grande e ir diminuindo com o tempo-->
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <!-- esse max-width significa que a imagem vai permancer grande ate chegar no tamanho de tela estipulado-->
+        <img src="imagens/foto-g.png" alt="imagem">
+    </picture>
+
+    <h1>reproduzir audio</h1>
+    <audio src="midia/musica.mp3" controls></audio>
+    <!--para por um audio basta usar a teg audio, e para que ele apareça no navegador usa-se o comando controls, caso ainada voce queira fazer a musica tocar automaticamente basta usar o comando autoplay-->
+    <!--essa foi a forma mais simples, há outra forma tambem para que navegadores que não use o mp3-->
+    <p>Outra forma de codigo</p>
+    <audio controls preload="metadata">
+        <!--esse parametro preload é o comando de quando o site poderá baixar o audio, caso voce deixe ele sem nenhum complemento, ou com o complemento "auto" o site sofuncionará quando baixar todo o audio primeiro.
+        se por o complemento matedata, ele vai baixar dados basicos, como o tamanho do audio, o nome e a data.(é o mais recomendavel)
+        se por o complemento none, ele não baixará nada, ate que você clique para reproduzir.
+        -->
+        <!--existe tbm o paramentro loop, que serve para deixar a musica tocando em loop-->
+        <source src="midia/musica.mp3" type="audio/mpeg">
+        <!--o type do mp3 é o unico diferente-->
+        <source src="midia/musica.ogg" type="audio/ogg">
+        <source src="midia/musica.wav" type="audio/wav"> <!--os arquivos wav não são recomendaveis pois são muito grandes-->
+        <p>Infelismente seu navegador não suporta reprodução de audio, voce pode baixalo <a href="midia/musica.mp3">aqui</a></p>
+    </audio>
+    <!--Dessa forma, estamos dizendo para o site que caso ele não consiga usar o mp3 ele tem outras opçôes-->
+</body>
+</html>
