@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de tabela</title>
+    <style>
+    
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        
+        .c1{
+            background-color: green;
+        }
+        .c2{
+            background-color: yellow;
+        }
+        .c3{
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercicio de tabela</h1>
+    <table>
+        <colgroup> <!--para alterar todos os valores de uma coluna, basta usar a teg colgroup, com as pseudo-tegs col e dalas uma class.-->
+        <col class="c1">
+        <col class="c2" span="2"><!-- colocando a pseudo-teg span vc pode agrupar mais de uma coluna-->
+        <col class="c3">
+        
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Nomes</th>
+                <th scope="col">Filmes1</th>
+                <th scope="col">Filmes2</th>
+                <th scope="col">Filmes3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana</td>
+                <td>Allen</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Cláudia</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr class="destaque">
+                <td>bruno</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
