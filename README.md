@@ -5,4 +5,3 @@
 
 <a href= "https://pmbpablo.github.io/HTML-CSS/exercicios/ex001/index.html"> Executar o exercicio 001
 
-<a href="atividade/atv 03/index.html" target="_blank">ir para a atv 3 
