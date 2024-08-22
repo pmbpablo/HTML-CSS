@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.pablo> h1,p{
+    background-color: rgba(0, 0, 0, 0.363);
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    
+}
+
+.pablo{
+    background-color: cadetblue;
+    text-align: justify;
+    width: 600px;
+    height: 300px;
+    margin: 100px;
+    padding: 50px;
+    background-image: url(../exercicios/ex022/imagens/wallpaper001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.308);
+}
