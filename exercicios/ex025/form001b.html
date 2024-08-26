@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulálio</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cabecalho.php" method="post" autocomplete="off" >
+        <!--esse method serve para mostrar ou não as infors na url, o get mostra, é o padrão, o post não mostra.-->
+        <!--usa-se o post quando precisar enviar arquivos, grandes textos, dados sensiveis -->
+        <!--o get serve par aenvio de coias mais "simples"-->
+        <p><label for="iname">Nome:</label> <input type="text" name="Nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
