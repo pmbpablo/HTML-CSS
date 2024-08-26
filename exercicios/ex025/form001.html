@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulálio</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cabecalho.php" autocomplete="off" >
+        <!--esse (action) diz para onde os dados serão enviados, como por exemplo o cabecalho.php, aqui é nescessario usar uma linguagem que possa trabalahar com esse dado-->
+        <!--esse (autocomplete) serve para aparecer as surgestoes na hora de preencher o formulario-->
+        <p><label for="iname">Nome:</label> <input type="text" name="Nome" id="inome"></p>
+        <!--o (input text) serve para prencher algo-->
+        <!--esse (label for) serve para informar sobre qual input esse texto estar se referindo-->
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="Sobrenome" id="isobrenome"></p>
+        <!--esse (name) é mais util para o php e o (id) é melhor para o javascript-->
+        <p><input type="submit" value="Enviar"></p>
+        <!--o (input submit) serve para enviar um dado-->
+    </form>
+</body>
+</html>
