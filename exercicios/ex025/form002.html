@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de formulario</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="cabecalho"  method="post" autocomplete="on">
+        <p>
+            <label for="user">Usuário:</label>
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="15" placeholder="Nome do usuario" autocomplete="username">
+            <!--esse (required) impede de deixar o formulario em branco-->
+            <!--o (placeholder) serve para por algo escrito dentro da caixa-->
+            <!--o (autocomplete) no  input especifico deixa voce especificar q autocomplento o site vai lhe dar, no caso atual é o (username) que irá lhe recomendar o seu usar mais usado-->
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="5" autocomplete="new-password" placeholder="insira a senha">
+            <!-- o (input password) serve para por a senha-->
+             <!--esses (minlength e maxlength) servem para especificar a quantidade de digitos dentro do input-->
+             <!--no caso da senha, há dois autocomplementos, o (new-passwor) para uma nova senha, e o (current-password) para uma senha nova-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <!-- o (input reset) serve para limpar os dados colocados-->
+        </p>
+    </form>
+    
+</body>
+</html>
