@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Teste de formulario</h1>
+    <form action="cadastro.php" autocomplete="on" method="get">
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name" >
+        </p>
+        <p>
+            <label for="imedia">Média</label>
+            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" required step="0.1" value="5">
+            <!--esse (step) serve para informar de quanto em quanto o número é valido, o padrão é de 1 em 1, daí pode alterar de meio em meio, ou ata de cada 1 decimo-->
+        </p>
+        <p>
+            <label for="imes">Período Letivo</label>
+            <input type="month" name="mes" id="imes" value="2022-08">
+            <!--esse (value) serve como valor padrão-->
+        </p>
+        <p>
+            <label for="idia">Dia da prova</label>
+            <input type="date" name="Dia" id="idia">
+            <!--o (date) é o dia mes e hora-->
+        </p>
+        <p>
+            <label for="ihora">Horario</label>
+            <input type="time" name="hora" id="ihora">
+            <!--o (time) é hora-->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
