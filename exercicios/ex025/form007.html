@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="" method="post">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="estado" id="iest"  >
+
+                <option value="" selected>--Escolha um Estado--</option>
+                <optgroup label="Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Nordeste">
+                    <option value="BA" >Bahia</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="MA">Maranhão</option>
+                </optgroup>
+            </select>
+            <!--
+            o (select) serve para dar uma opção para ser selecionado, para dar as opções usa-se o (option), dar para agrupar as opções com o (optgroup) com um label
+            -->
+            <!--
+            dar par usar o (selected) para por um opção como padrão
+            -->
+        </p>
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="profissoes">
+            <datalist id="profissoes">
+                <option value="ADM">Admistração</option>
+                <option value="PRO">Professor</option>
+                <option value="CONT">Contador</option>
+                <option value="MED">Médico</option>
+            </datalist>
+
+            <!--
+            para dar opções a um (input text) usa-se o (datalist) com um (id), e suas opçoes, para que aparessa, coloca-se o um (list) no (input text) com o nome do (id)
+            -->
+
+        </p>
+
+        <p>
+            <label for="imens">Mensagem</label><br>
+            <textarea name="mens" id="imens" cols="30" rows="10"></textarea>
+
+            <!-- para dar espaço para o visistante escrever algo, usa-se o (textarea)
+            usa-se o method post tbm 
+            -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
