@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+        }
+        caption{
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .cb{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+        <col class="ca">
+        <col class="cb" span="2">
+        <col class="cc">
+        <col class="cd">
+        
+        </colgroup>
+        <tr>
+            <th class="pab" scope="col" rowspan="2">Área</th>
+            <th class="pab" scope="col" rowspan="2">Diciplinas</th>
+            <th class="pab" scope="col" rowspan="2">Média</th>
+        </tr>
+        <tr>
+            <th class="pab" scope="col">Nota 1</th>
+            <th class="pab" scope="col">Nota 2</th>
+        </tr>
+        <tr>
+            <th scope="rowgroup" rowspan="4">Exatas</th>
+            <td>Matemática</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Física</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Química</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        
+        <tr>
+            <th scope="rowgroup" rowspan="2">Humanas</th>
+            <td>História</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+       
+    </table>
+</body>
+</html>

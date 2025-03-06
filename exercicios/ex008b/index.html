@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Codigo-fonte</h2>
+    <p>serve para ver melhor  codigos como esse <code> script src="scripts/main.js"script </code> </p>
+    <p>
+        <pre>
+            import java.io.*;
+ 
+public class CallCLPgm
+{
+   public static void main(String[] args)
+   {
+      try
+      {
+         Process theProcess =
+                 Runtime.getRuntime().exec("/QSYS.LIB/JAVSAMPLIB.LIB/DSPJVA.PGM");
+      }
+      catch(IOException e)
+      {
+         System.err.println("Error on exec() method");
+         e.printStackTrace();
+      }
+   } 
+}
+        </pre>
+    </p>
+
+    <h2>Citaçoes simples</h2>
+    <p><q>blabla </q> como diria pablo</p>
+
+    <h2>Citaçoes completas</h2>
+
+    <p>segundo harry potter em a padra filosofal</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Harry_Potter_e_a_Pedra_Filosofal/GjgQCwAAQBAJ?hl=pt-BR&gbpv=0">
+        eu não estou indo para casa, não mesmo.
+    </blockquote>
+
+    <h2>Abreviaçoes</h2>
+    <p>oi eu sou o <abbr title="Pablo Matos Bezerra">PMB</abbr>
+    </p>
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">pablo matos bezerra</bdo></p>
+    
+    
+</body>
+</html>

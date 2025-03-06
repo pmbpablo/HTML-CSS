@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela 4</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+        }
+        caption{
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <table>
+        <caption>Filmes Favoritos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Mônica</td>
+                <td>Shazan</td>
+                <td>HP</td>
+                <td>Alien</td>
+            </tr>
+            <tr>
+                <td>Andressa</td>
+                <td>lorem </td>
+                <td>lorem</td>
+                <td>lorem </td>
+            
+            </tr>
+            <tr>
+                <td>Julia</td>
+                <td>lorem </td>
+                <td>lorem </td>
+                <td>lorem </td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>Pablo</td>
+                <td>lorem</td>
+                <td>lorem</td>
+                <td>lorem</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>lorem</td>
+                <td>lorem</td>
+                <td>lorem</td>
+            
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>lorem</td>
+                <td>lorem</td>
+                <td>lorem</td>
+            </tr>
+        </tbody>  
+    </table>
+    
+</body>
+</html>

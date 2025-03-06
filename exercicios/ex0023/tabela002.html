@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela grande</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            /*position: relative;*/
+        }
+        td, th {
+            border: 1px solid black;padding: 10px;
+            
+        }
+        .num{
+            text-align: right;
+            width: 100px;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        tbody  tr:nth-child(2n){ /*efeito zebrado*/
+            background-color: darkgray;
+        }
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+        thead > tr >th{
+            position: sticky; /*fixar titulo*/
+            top: 0px;
+            background-color: darkgray;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas grandes</h1>
+    <table>
+        <caption>População</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">40 500 234</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">12 254 321</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">12 215 369</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">40 500 234</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td class="num">12 254 321</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">12 215 369</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">40 500 234</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">12 254 321</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">12 215 369</td>
+            </tr>
+            <tr>
+                <td>Pernanbuco</td>
+                <td class="num">40 500 234</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">12 254 321</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">12 215 369</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">12 215 369</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">40 500 234</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">12 254 321</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">12 215 369</td>
+            </tr>
+            <tr>
+                <td>Pernanbuco</td>
+                <td class="num">40 500 234</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">12 254 321</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">12 215 369</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td class="num" ><strong>320 564 227</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

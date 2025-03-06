@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+    <style>
+        img{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>imagens dinamicas</h1>
+    <picture>
+        <source media="(max-width: 750px )" type="image/jpg" srcset="imagens/imagem-p.jpg">
+        <source media="(max-width: 1050px)" type="image/jpg" srcset="imagens/imagem-m.jpg">
+        <img src="imagens/imagem-g.jpg" alt="foto grande">
+    </picture>
+    
+     <h2>Audios</h2>
+     <audio preload="auto" controls> <!--auto o site só vai carregar completamente quando o audio carregar(não é indicado), metadate carrega alguma infos, o none não carrega nada-->
+        <!-- parametro audio
+         autoplay
+         loop
+         controls 
+         -->
+         
+         
+        <source src="midia/musica.mp3" type="audio/mpeg">
+        <source src="midia/musica.ogg" type="audio/ogg"><!--não está convertido   -->
+        <source src="midia/musica.wav" type="audio/wav"><!--não está convertido   -->
+        <!-- arquivos wav não são recomendados, por serem muito grandes -->
+        <p>Seu navegador não é compativel com reprodução de audios, clique <a href="midia/musica.mp3">aqui</a> para baixar o audio</p>
+     </audio>
+     <!-- opçoes para os navegadores -->
+
+</body>
+</html>
