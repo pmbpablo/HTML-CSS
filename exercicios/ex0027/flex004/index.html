@@ -8,9 +8,10 @@
         .conteiner{
             background-color: lightsalmon;
             display: flex;
-            flex-flow: column wrap;
-            justify-content: space-between;
-            height: 80vh;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
             /*
             justify-content: flex-start; o espaço que sobra fica no fim (ou seja, os itens vão colar no inicio do conteiner).
 
@@ -24,6 +25,15 @@
 
             justify-content: space-around; vai dividir o conteiner pela quantidade de itens e dentro de cada divisão ele vai por o item no meio
             
+            */
+            /*
+            align-itens: stretch; o item vai preencher todo o espaço
+
+            align-itens: flex-start; o espaço que sobra fica no fim (ou seja, os itens vão colar no inicio do conteiner).
+
+            align-itens: flex-end; o espaço que sobra fica no inicio (ou seja, os itens vão colar no fim do conteiner).
+
+            align-itens: center; os itens vão ficar centralizados no meio do conteiner.
             */
         }
         .item{
