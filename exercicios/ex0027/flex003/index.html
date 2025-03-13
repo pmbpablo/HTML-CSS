@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .conteiner{
+            background-color: lightsalmon;
+            display: flex;
+            /*flex-direction: row;
+            flex-wrap: wrap;*/
+            flex-flow: row nowrap;
+            
+            
+           
+            /*
+            flex-wrap: wrap; o ultimo iten vai para proximo cross quando não houver espaço
+            flex-wrap: wrap-revese; o ultimo iten vai para o sentido oposto ao cross
+            */
+        }
+        .item{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .conteiner{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: space-between;
+            height: 80vh;
+            /*
+            justify-content: flex-start; o espaço que sobra fica no fim (ou seja, os itens vão colar no inicio do conteiner).
+
+            justify-content: flex-end; o espaço que sobra fica no inicio (ou seja, os itens vão colar no fim do conteiner).
+
+            justify-content: center; os itens vão ficar centralizados no meio do conteiner.
+
+            justify-content: space-between; o primeiro e o ultimo item vão colar no inicio e no fim do conteiner, e os outros itens terão um espaçamento igual.
+
+            justify-content: space-evenly; vai haver um espaço igual entre todos os itens.
+
+            justify-content: space-around; vai dividir o conteiner pela quantidade de itens e dentro de cada divisão ele vai por o item no meio
+            
+            */
+        }
+        .item{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            padding: 40px;
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </div>
+</body>
+</html>
