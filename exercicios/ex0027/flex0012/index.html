@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible box</title>
+    <style>
+        .conteiner{
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+        .item{
+            background-color: aquamarine;
+            border: 1px solid black;
+            text-align: center;
+            
+            
+        }
+
+        #a{
+            /*flex-shrink: 1;
+            flex-grow: 0;
+            flex-basis: 200px;*/
+            flex: 0 1 200px; /*flex-grow + flex-shrink + flex-basis*/
+            /*flex: initial = normal*/
+            /*flex: none = sem flexibilidade*/
+            /*flex: auto = vai crecer e diminuir*/
+            /*flex: 3 = o grow vai receber o valor 3 e o restante o padrão*/
+        }
+        #b{
+            flex-shrink: 1;
+            flex-grow: 3;
+            flex-basis: 200px;
+        }
+        #c{
+            flex-shrink: 1;
+            flex-grow: 0;
+            flex-basis: 200px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="a">1</div>
+        <div class="item" id="b">2</div>
+        <div class="item" id="c">3</div>
+    </div>
+</body>
+</html>
