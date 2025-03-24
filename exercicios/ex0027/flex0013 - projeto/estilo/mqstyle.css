@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 668px){
+    header{
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header .menu{
+        display: flex;
+
+
+    }
+
+    header .itens{
+        width: 80px;
+        margin: 0px 10px 0px 10px;
+    }
+   
+    
+}
+
